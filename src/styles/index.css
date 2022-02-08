@@ -1,12 +1,39 @@
-
-/* 
-
-    You can write your own styles here...
+body{
+    background-color: #407088;
+    
+}
+.container{
+    margin-top:100px;
+    text-align: center;
+    align-items: center;
+    border: #ffcbcb 1px solid;
+    width: 500px;
+    height: 500px;
+    background-color: #ffcbcb;
+    border-radius: 10px;
+    
+}
+h1{
+    color:#132743;
+}
+.input{
+    width: 250px;
+    background-color: #ffb5b5;
+}
+.list{
+    color: #132743;
+    font-size: 2rem;
+}
+.list span{
+    display: none;
     
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
+li:hover span{
+    display: inline;
+    cursor: pointer;
+    color: #132743;
+}
 
-*/
+
+
