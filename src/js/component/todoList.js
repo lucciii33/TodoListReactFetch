@@ -22,7 +22,7 @@ export const TodoList = () => {
 			})
 			.then((responseAsJson) => {
 				// Do stuff with the JSONified response
-				console.log(responseAsJson);
+				setList(responseAsJson);
 			})
 			.catch((error) => {
 				console.log("Looks like there was a problem: \n", error);
@@ -67,7 +67,9 @@ export const TodoList = () => {
 	}
 
 	function handleRemove(index) {
-		setList(list.filter((remove, i) => i != index));
+		let newList = list.filter((item, i) => i != index);
+		setList(newList);
+		putFetch(newList);
 	}
 
 	return (
